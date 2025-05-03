@@ -8,7 +8,7 @@ class MDBookSidebarScrollbox extends HTMLElement {
         super();
     }
     connectedCallback() {
-        this.innerHTML = '<ol class="chapter"><li class="chapter-item expanded "><a href="chapter_1.html"><strong aria-hidden="true">1.</strong> Chapter 1</a></li></ol>';
+        this.innerHTML = '<ol class="chapter"><li class="chapter-item expanded "><a href="前言.html"><strong aria-hidden="true">1.</strong> 前言</a></li><li class="chapter-item expanded affix "><li class="part-title">古代漢語</li><li class="chapter-item expanded "><a href="古代漢語.html"><strong aria-hidden="true">2.</strong> 古代漢語</a></li><li class="chapter-item expanded "><a href="五行八卦.html"><strong aria-hidden="true">3.</strong> 五行八卦</a></li><li class="chapter-item expanded "><a href="蒙学新编.html"><strong aria-hidden="true">4.</strong> 蒙学新编</a></li><li class="chapter-item expanded "><a href="缤纷色彩.html"><strong aria-hidden="true">5.</strong> 缤纷色彩</a></li><li class="chapter-item expanded "><a href="月份别称.html"><strong aria-hidden="true">6.</strong> 月份别称</a></li><li class="chapter-item expanded affix "><li class="part-title">現代漢語</li><li class="chapter-item expanded "><a href="現代漢語.html"><strong aria-hidden="true">7.</strong> 現代漢語</a></li><li class="chapter-item expanded "><a href="中文排版風格.html"><strong aria-hidden="true">8.</strong> 中文排版風格</a></li><li class="chapter-item expanded "><a href="簡繁轉換工具.html"><strong aria-hidden="true">9.</strong> 簡繁轉換工具</a></li></ol>';
         // Set the current, active page, and reveal it if it's hidden
         let current_page = document.location.href.toString().split("#")[0];
         if (current_page.endsWith("/")) {
